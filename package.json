@@ -22,8 +22,10 @@
   },
   "homepage": "https://github.com/mcoeur/node-image-server#readme",
   "dependencies": {
+    "aws-sdk": "^2.6.9",
     "busboy": "^0.2.13",
     "mime-types": "^2.1.12",
+    "streamifier": "^0.1.1",
     "uuid": "^2.0.3"
   }
 }
