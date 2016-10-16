@@ -2,8 +2,7 @@ let AWS = require("aws-sdk");
 let stream = require("streamifier");
 let uuid = require("uuid");
 let S3;
-
-let config = {};
+let config = null;
 
 module.exports = function(userConf) {
     config = Object.assign({}, config, userConf);

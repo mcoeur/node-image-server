@@ -11,7 +11,6 @@ let provider = {};
 
 module.exports = function(userConf) {
     config = Object.assign({}, config, userConf);
-    config.logger.log("config : ", config);
     provider = require("./providers/"+config.provider.type)(config.provider);
     return function (req, res, next) {
         try {
